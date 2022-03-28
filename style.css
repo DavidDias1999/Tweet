@@ -1,0 +1,91 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+
+  vertical-align: baseline;
+}
+
+:root {
+  --text: #0f1419;
+  --icon-text: #536471;
+  --border: #dadddf;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 122vh;
+}
+
+.container-tweet {
+  width: 591px;
+  height: 161px;
+  display: flex;
+  border: 1px solid var(--border);
+}
+
+.image {
+  padding: 17px;
+}
+
+.header {
+  margin-top: 18px;
+  max-width: 178px;
+  width: 100%;
+  font-size: 15px;
+  color: var(--);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 0;
+}
+
+.user-id,
+.date {
+  color: #536471;
+}
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: var(--icon-text);
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.main {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.span-init {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.join {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.fotter {
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+small {
+  font-size: 13px;
+  color: var(--icon-text);
+  padding: 0px 18px;
+}
