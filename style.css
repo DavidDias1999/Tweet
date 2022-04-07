@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 15px;
 
   vertical-align: baseline;
 }
@@ -18,35 +18,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 122vh;
+  height: 100vh;
 }
 
 .container-tweet {
-  width: 591px;
+  width: 100%;
+  max-width: 591px;
   height: 161px;
   display: flex;
   border: 1px solid var(--border);
+  padding: 17px;
+  box-sizing: border-box;
 }
 
 .image {
   padding: 17px;
 }
 
-.header {
-  margin-top: 18px;
-  max-width: 178px;
-  width: 100%;
-  font-size: 15px;
-  color: var(--);
+.contant{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 0;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
-.user-id,
-.date {
-  color: #536471;
+.header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 5px;
+}
+
+.header h1{
+  margin-right: 3px;
+}
+
+.verify{
+  height: 15px;
+  width: 15px;
+  margin-right: 6px;
+}
+
+.user-id{
+  color: var(--icon-text);
+  margin-right: 4px;
 }
 .dot {
   width: 3px;
@@ -55,10 +69,16 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 2px;
+  margin-right: 4px;
+}
+
+.date {
+  color: var(--icon-text);
 }
 
 .main {
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
 }
@@ -71,7 +91,7 @@ body {
 }
 
 .join {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 15px;
   font-weight: 400;
   color: var(--text);
@@ -81,11 +101,31 @@ body {
   max-width: 430px;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+  cursor: pointer;
 }
 
 small {
   font-size: 13px;
   color: var(--icon-text);
-  padding: 0px 18px;
+  margin: 0px 18px;
+}
+
+
+@media(max-width: 1024px){
+  .container-tweet {
+    max-width: 591px;
+    
+    height: 161px;
+    display: flex;
+    border: 1px solid var(--border);
+    padding: 10px;
+    margin: 0 10px;
+  }
+  small{
+    margin: 0 4px 2px 4px;
+  }
 }
